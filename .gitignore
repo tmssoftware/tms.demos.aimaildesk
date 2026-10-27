@@ -25,7 +25,6 @@ iOSDevice64/
 iOSSimARM64/
 Debug/
 Release/
-MailDesk/bin/
 
 # Delphi IDE / local state
 *.local
