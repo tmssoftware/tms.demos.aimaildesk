@@ -38,8 +38,9 @@ and Volkswagen sales go to different people.
 ## Download
 
 Prebuilt Win32 binaries of both editions are on the
-[Releases](https://github.com/tmssoftware/tms.demos.aimaildesk/releases) page: unzip and start the server
-(`MCPServer\GarageMailMCP.exe` or `MailDeskServer.exe`), then the dashboard. To build from source, see below.
+[Releases](https://github.com/tmssoftware/tms.demos.aimaildesk/releases) page. Unzip, then for this demo
+start `MCPServer\GarageMailMCP.exe` and then `GarageMailDesk.exe`; for the configurable edition start
+`MailDesk.exe`, which starts `MailDeskServer.exe` by itself. To build from source, see below.
 The configurable edition is in [`MailDesk\`](MailDesk/README.md); [API-KEYS.md](API-KEYS.md) explains how to get
 the optional API keys.
 
