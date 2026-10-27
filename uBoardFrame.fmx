@@ -1,0 +1,221 @@
+object frBoard: TfrBoard
+  Size.Width = 1428.000000000000000000
+  Size.Height = 760.000000000000000000
+  Size.PlatformDefault = False
+  object lblBoardInfo: TLabel
+    Align = Top
+    StyledSettings = [Family]
+    TextSettings.Font.Size = 12.000000000000000000
+    TextSettings.FontColor = xFF64748B
+    TextSettings.WordWrap = False
+    TextSettings.Trimming = Character
+    Margins.Bottom = 12.000000000000000000
+    Size.Width = 1400.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Every triaged mail is a card in its department. Drag a card to another column to re-route it: the handler and the reply signature follow.'
+  end
+  object recBoardCard: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Stroke.Color = xFFE5E7EB
+    XRadius = 14.000000000000000000
+    YRadius = 14.000000000000000000
+    Size.Width = 1400.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    Padding.Left = 12.000000000000000000
+    Padding.Top = 12.000000000000000000
+    Padding.Right = 12.000000000000000000
+    Padding.Bottom = 12.000000000000000000
+    object kbBoard: TTMSFNCKanbanBoard
+      Align = Client
+      Size.Width = 1388.000000000000000000
+      Size.Height = 588.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Stroke.Kind = gskNone
+      Columns = <
+        item
+          Name = 'Header0'
+          HeaderText = 'Sales'
+          FooterText = 'Footer 0'
+          Tag = 1
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFF1D4ED8
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end
+        item
+          Name = 'Header1'
+          HeaderText = 'Maintenance'
+          FooterText = 'Footer 1'
+          Tag = 3
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFFC2410C
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end
+        item
+          Name = 'Header2'
+          HeaderText = 'Accessories'
+          FooterText = 'Footer 2'
+          Tag = 2
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFF6D28D9
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end
+        item
+          Name = 'Header3'
+          HeaderText = 'Finance'
+          FooterText = 'Footer 3'
+          Tag = 4
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFF047857
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end
+        item
+          Name = 'Header4'
+          HeaderText = 'Second-hand'
+          FooterText = 'Footer 4'
+          Tag = 5
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFF0F766E
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end
+        item
+          Name = 'Header5'
+          HeaderText = 'Reception'
+          FooterText = 'Footer 5'
+          HeaderHorizontalTextAlign = gtaLeading
+          Width = 200.000000000000000000
+          UseDefaultAppearance = False
+          Fill.Kind = gfkNone
+          Stroke.Kind = gskNone
+          HeaderStroke.Kind = gskNone
+          HeaderFont.Size = 14.000000000000000000
+          HeaderFont.Color = xFF475569
+          HeaderFont.StyleExt = {00070000000000000004000000}
+          Items = <>
+          Filter = <>
+        end>
+      ColumnsAppearance.Margins.Left = 10.000000000000000000
+      ColumnsAppearance.Margins.Top = 10.000000000000000000
+      ColumnsAppearance.Margins.Right = 10.000000000000000000
+      ColumnsAppearance.Margins.Bottom = 10.000000000000000000
+      ColumnsAppearance.Spacing = 12.000000000000000000
+      ColumnsAppearance.HeaderSize = 44.000000000000000000
+      ColumnsAppearance.HeaderFill.Kind = gfkNone
+      ColumnsAppearance.HeaderStroke.Kind = gskNone
+      ColumnsAppearance.Fill.Kind = gfkNone
+      ColumnsAppearance.Stroke.Kind = gskNone
+      Interaction.DragDropMode = kbdmMove
+      Interaction.DirectDrag = True
+      ItemsAppearance.Font.Color = xFF334155
+      ItemsAppearance.TitleFont.Size = 13.000000000000000000
+      ItemsAppearance.TitleFont.Color = xFF0F172A
+      ItemsAppearance.TitleFont.StyleExt = {00070000000000000004000000}
+      ItemsAppearance.Margins.Left = 10.000000000000000000
+      ItemsAppearance.Margins.Top = 10.000000000000000000
+      ItemsAppearance.Margins.Right = 10.000000000000000000
+      ItemsAppearance.Margins.Bottom = 10.000000000000000000
+      ItemsAppearance.Fill.Color = claWhite
+      ItemsAppearance.Stroke.Color = xFFE2E8F0
+      ItemsAppearance.SelectedFill.Color = xFFEFF6FF
+      ItemsAppearance.SelectedStroke.Color = xFF2563EB
+      ItemsAppearance.SelectedStroke.Width = 2.000000000000000000
+      ItemsAppearance.FixedHeight = 25.000000000000000000
+      ItemsAppearance.ShowFocus = False
+      OnAfterDropItem = kbBoardAfterDropItem
+      OnResize = kbBoardResized
+    end
+    object lineBoard1: TRectangle
+      Fill.Color = xFFE2E8F0
+      HitTest = False
+      Position.X = 230.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lineBoard2: TRectangle
+      Fill.Color = xFFE2E8F0
+      HitTest = False
+      Position.X = 460.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lineBoard3: TRectangle
+      Fill.Color = xFFE2E8F0
+      HitTest = False
+      Position.X = 690.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lineBoard4: TRectangle
+      Fill.Color = xFFE2E8F0
+      HitTest = False
+      Position.X = 920.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lineBoard5: TRectangle
+      Fill.Color = xFFE2E8F0
+      HitTest = False
+      Position.X = 1150.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+end

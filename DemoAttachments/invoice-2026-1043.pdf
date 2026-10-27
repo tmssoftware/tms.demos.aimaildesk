@@ -1,0 +1,40 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 739 >>
+stream
+BT /F1 20 Tf 50 780 Td (Brightline Motors - Invoice) Tj ET
+BT /F1 12 Tf 50 750 Td (Invoice number: 2026-1043          Date: 2026-10-02) Tj ET
+BT /F1 12 Tf 50 732 Td (Customer: Nathalie Maes, nathalie.maes@example.com) Tj ET
+BT /F1 12 Tf 50 714 Td (Vehicle: Skoda Octavia Combi 2.0 TDI) Tj ET
+BT /F1 12 Tf 50 680 Td (Annual service (oil, filters, inspection)            EUR 321,90) Tj ET
+BT /F1 12 Tf 50 662 Td (Wiper blades                                         EUR  67,60) Tj ET
+BT /F1 14 Tf 50 630 Td (Total incl. VAT: EUR 389,50) Tj ET
+BT /F1 12 Tf 50 600 Td (Payment: credit card **** 4417 on 2026-10-02 (charged twice - see card statement)) Tj ET
+BT /F1 10 Tf 50 560 Td (Brightline Motors - Example street 1 - BE 0000.000.000) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001031 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1101
+%%EOF

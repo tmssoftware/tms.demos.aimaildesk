@@ -1,0 +1,43 @@
+# Delphi build output
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.dcu
+*.dcpil
+*.drc
+*.map
+*.rsm
+*.tds
+*.obj
+*.o
+*.a
+*.lib
+Win32/
+Win64/
+Win64x/
+Linux64/
+OSX64/
+OSXARM64/
+Android/
+Android64/
+iOSDevice64/
+iOSSimARM64/
+Debug/
+Release/
+MailDesk/bin/
+
+# Delphi IDE / local state
+*.local
+*.identcache
+*.projdata
+*.stat
+*.dsk
+*.~*
+__history/
+__recovery/
+*.dproj.local
+*.groupproj.local
+
+# Local tooling
+.claude/settings.local.json

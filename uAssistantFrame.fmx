@@ -1,0 +1,150 @@
+object frAssistant: TfrAssistant
+  Size.Width = 400.000000000000000000
+  Size.Height = 300.000000000000000000
+  Size.PlatformDefault = False
+  object recAssistant: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Stroke.Color = xFFE5E7EB
+    XRadius = 14.000000000000000000
+    YRadius = 14.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    Padding.Left = 12.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 12.000000000000000000
+    Padding.Bottom = 12.000000000000000000
+    object layAssistantHeader: TLayout
+      Align = Top
+      Size.Width = 376.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      object lblAssistantTitle: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF0F172A
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = Character
+        Text = 'Assistant'
+      end
+    end
+    object lblAssistantHint: TLabel
+      Align = Top
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.Y = 40.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Ask or instruct: "urgent Audi mails?", "retry the failed mails"'
+    end
+    object chatAssistant: TTMSFNCChat
+      Appearance.MinEntryBoxHeight = 36
+      Appearance.MaxEntryBoxHeight = 90
+      Stroke.Kind = gskNone
+      DefaultRightItem.Fill.Color = xFF2563EB
+      DefaultRightItem.Stroke.Color = xFF2563EB
+      DefaultRightItem.TitleColor = xFFDBEAFE
+      DefaultRightItem.TextColor = claWhite
+      DefaultLeftItem.Fill.Color = xFFF1F5F9
+      DefaultLeftItem.Stroke.Color = xFFF1F5F9
+      DefaultLeftItem.TitleColor = xFF64748B
+      DefaultLeftItem.TextColor = xFF0F172A
+      Align = Client
+      Margins.Top = 6.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 220.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnAfterSendButtonMessage = chatAssistantAfterSendButtonMessage
+    end
+  end
+  object mcpAssistant: TTMSMCPClient
+    Left = 300
+    Top = 200
+    ClientName = 'GarageMailDesk dashboard'
+    ClientVersion = '2.0'
+    Servers = <>
+    ToolCallTimeout = 200000
+    ToolDeniedMessage = 
+      'The user declined this action. Do not try it again; say what you' +
+      ' would have done.'
+    Tools = <
+      item
+        Name = 'filter_inbox'
+        Description = 
+          'Filter the inbox grid the user is looking at. Every parameter is' +
+          ' optional; an omitted parameter clears that filter. Only set a f' +
+          'ilter the user asked for: leave department out unless the user n' +
+          'ames a department (a brand such as Audi is not a department; put' +
+          ' it in text).'
+        Parameters = <
+          item
+            ArrayProperties = <>
+            Name = 'department'
+            Type = ptEnum
+            Required = False
+            Description =
+              'Department to show; omit it to show all departments. Only when' +
+              ' the user names a department.'
+            Properties = <>
+          end
+          item
+            ArrayProperties = <>
+            Name = 'priority'
+            Type = ptEnum
+            Required = False
+            Description = 'Priority to show'
+            Properties = <>
+          end
+          item
+            ArrayProperties = <>
+            Name = 'text'
+            Type = ptString
+            Required = False
+            Description = 
+              'Text to look for in sender, subject, brand, handler or departmen' +
+              't'
+            Properties = <>
+          end>
+        StrictParams = False
+        OnExecute = AssistantFilterInbox
+      end
+      item
+        Name = 'show_mail'
+        Description = 
+          'Select a mail in the dashboard, so the user sees its analysis, r' +
+          'eply draft and original.'
+        Parameters = <
+          item
+            ArrayProperties = <>
+            Name = 'id'
+            Type = ptNumber
+            Description = 'Mail id'
+            Properties = <>
+          end>
+        OnExecute = AssistantShowMail
+      end
+      item
+        Name = 'show_page'
+        Description = 'Open a page of the dashboard.'
+        Parameters = <
+          item
+            ArrayProperties = <>
+            Name = 'page'
+            Type = ptEnum
+            Description = 'Page to open'
+            Properties = <>
+          end>
+        OnExecute = AssistantShowPage
+      end>
+    OnBeforeUseTool = AssistantBeforeUseTool
+    OnExecuted = AssistantExecuted
+  end
+end

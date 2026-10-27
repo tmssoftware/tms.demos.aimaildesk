@@ -1,0 +1,826 @@
+object frSettings: TfrSettings
+  Size.Width = 1428.000000000000000000
+  Size.Height = 760.000000000000000000
+  Size.PlatformDefault = False
+  object recSettingsCard: TRectangle
+    Align = Left
+    Fill.Color = claWhite
+    Stroke.Color = xFFE5E7EB
+    XRadius = 14.000000000000000000
+    YRadius = 14.000000000000000000
+    Size.Width = 552.000000000000000000
+    Size.Height = 740.000000000000000000
+    Size.PlatformDefault = False
+    object lblGmailHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Gmail'
+    end
+    object lblGmailHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 496.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Google Cloud console > Credentials > OAuth client ID (enable the Gmail API)'
+    end
+    object lblGmailClientID: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Client ID'
+    end
+    object edGmailClientID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblGmailSecret: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Client secret'
+    end
+    object edGmailSecret: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Password = True
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblOutlookHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Outlook'
+    end
+    object lblOutlookHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 496.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Microsoft Entra ID > App registrations (Mail.ReadWrite + Mail.Send)'
+    end
+    object lblOutlookClientID: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Client ID'
+    end
+    object edOutlookClientID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 224.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblOutlookSecret: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 260.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Client secret'
+    end
+    object edOutlookSecret: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Password = True
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 260.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblCallback: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 300.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Callback URL'
+    end
+    object edCallback: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 300.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblAIHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 352.000000000000000000
+      Size.Width = 496.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'AI service'
+    end
+    object lblAIHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = True
+      TextSettings.VertAlign = Leading
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 382.000000000000000000
+      Size.Width = 496.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'TMS AI Studio - TTMSMCPCloudAI: OpenAI, Claude, Gemini, Mistral, Ollama, ... The assistant uses it too.'
+    end
+    object lblAIService: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 424.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Service'
+    end
+    object cbAIService: TComboBox
+      Items.Strings = (
+        'Offline keyword rules (no AI)')
+      ItemIndex = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 424.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 20
+      OnChange = cbAIServiceChange
+    end
+    object lblAPIKey: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 460.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'API key'
+    end
+    object edAPIKey: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Password = True
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 460.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblMaxMails: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 496.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Mails per fetch'
+    end
+    object edMaxMails: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = '25'
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 496.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnSaveSettings: TRectangle
+      Align = None
+      Cursor = crHandPoint
+      Fill.Color = xFF2563EB
+      Stroke.Kind = None
+      Position.X = 160.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 19.000000000000000000
+      YRadius = 19.000000000000000000
+      OnClick = btnSaveSettingsClick
+      Position.Y = 548.000000000000000000
+      object btnSaveSettingsIcon: TLabel
+        Align = Left
+        StyledSettings = []
+        TextSettings.Font.Family = 'Segoe MDL2 Assets'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = Character
+        HitTest = False
+        Margins.Left = 12.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Text = #59214
+      end
+      object btnSaveSettingsText: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Leading
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = Character
+        HitTest = False
+        Margins.Left = 6.000000000000000000
+        Margins.Right = 14.000000000000000000
+        Text = 'Save settings'
+      end
+      object aniBtnSaveSettings: TFloatAnimation
+        Duration = 0.100000000000000000
+        PropertyName = 'Opacity'
+        StartValue = 1.000000000000000000
+        StopValue = 0.819999992847442600
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object btnConnectGmail: TRectangle
+      Align = None
+      Cursor = crHandPoint
+      Fill.Color = claWhite
+      Stroke.Color = xFFE2E8F0
+      Position.X = 404.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = btnConnectClick
+      object btnConnectGmailText: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = xFF1E293B
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = Character
+        HitTest = False
+        Text = 'Connect'
+      end
+      object aniBtnConnectGmail: TFloatAnimation
+        Duration = 0.100000000000000000
+        PropertyName = 'Opacity'
+        StartValue = 1.000000000000000000
+        StopValue = 0.819999992847442600
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object btnConnectOutlook: TRectangle
+      Align = None
+      Cursor = crHandPoint
+      Fill.Color = claWhite
+      Stroke.Color = xFFE2E8F0
+      Position.X = 404.000000000000000000
+      Position.Y = 164.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 15.000000000000000000
+      YRadius = 15.000000000000000000
+      OnClick = btnConnectClick
+      object btnConnectOutlookText: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = xFF1E293B
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        TextSettings.Trimming = Character
+        HitTest = False
+        Text = 'Connect'
+      end
+      object aniBtnConnectOutlook: TFloatAnimation
+        Duration = 0.100000000000000000
+        PropertyName = 'Opacity'
+        StartValue = 1.000000000000000000
+        StopValue = 0.819999992847442600
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object lblDryRun: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 300.000000000000000000
+      Position.Y = 496.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Dry run'
+    end
+    object swDryRun: TSwitch
+      IsChecked = True
+      Position.X = 380.000000000000000000
+      Position.Y = 500.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 26
+    end
+    object lblSettingsInfo: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      Position.X = 28.000000000000000000
+      Position.Y = 606.000000000000000000
+      TextSettings.VertAlign = Leading
+      Size.Width = 496.000000000000000000
+      Size.Height = 136.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'The settings live on the triage server (GarageMailMCP.exe) and are changed through its MCP tools, so an LLM can maintain them too. Secrets never come back from the server: leave a secret field empty to keep its value. A first mailbox login opens in a browser on the server machine.'#13#10''#13#10'Dry run only affects forwarding. Reply drafts are always saved as drafts and never sent: a person reviews and sends them.'
+    end
+  end
+  object recAlertsCard: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Stroke.Color = xFFE5E7EB
+    XRadius = 14.000000000000000000
+    YRadius = 14.000000000000000000
+    Margins.Left = 16.000000000000000000
+    Position.X = 568.000000000000000000
+    Size.Width = 496.000000000000000000
+    Size.Height = 740.000000000000000000
+    Size.PlatformDefault = False
+    object lblAlertsHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Urgent alerts'
+    end
+    object lblAlertsHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 444.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Pushover message to the on-call mechanic for every urgent mail'
+    end
+    object lblPushoverToken: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'API token'
+    end
+    object edPushoverToken: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Password = True
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblPushoverUser: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'User / group key'
+    end
+    object edPushoverUser: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 116.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblAlertsEnabled: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 156.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Send alerts'
+    end
+    object swAlerts: TSwitch
+      Position.X = 160.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 30
+    end
+    object lblCalendarHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 204.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Calendar sync'
+    end
+    object lblCalendarInfo: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      Position.X = 28.000000000000000000
+      Position.Y = 228.000000000000000000
+      TextSettings.VertAlign = Leading
+      Size.Width = 444.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Appointments go to the calendar of the connected mailbox (enable the Google Calendar API, or add Calendars.ReadWrite). The first sync asks for consent in a browser on the server machine.'
+    end
+    object lblTranslationHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 292.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Translation (AI service)'
+    end
+    object lblTranslationHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 316.000000000000000000
+      Size.Width = 444.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Mails in the handler''s language; the forward includes the translation'
+    end
+    object lblTargetLanguage: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 348.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Handler language'
+    end
+    object edTargetLanguage: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = 'EN-GB'
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 348.000000000000000000
+      Size.Width = 140.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'English, Dutch, EN-GB...'
+    end
+    object lblTranslationInfo: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 444.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Only on request (ask the assistant to translate a mail), with the AI service and key of the triage'
+    end
+    object lblAutomationHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 436.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Automation'
+    end
+    object lblAutomationHint: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 12.000000000000000000
+      TextSettings.FontColor = xFF64748B
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 460.000000000000000000
+      Size.Width = 444.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'The server works on its own: fetch on a schedule, triage and save the drafts'
+    end
+    object lblAutoFetch: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 492.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Fetch every (min)'
+    end
+    object edAutoFetch: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Text = '0'
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 492.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblAutoTriage: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 528.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Triage new mails'
+    end
+    object swAutoTriage: TSwitch
+      Position.X = 160.000000000000000000
+      Position.Y = 532.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 41
+    end
+    object lblAutoDrafts: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 560.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Save reply drafts'
+    end
+    object swAutoDrafts: TSwitch
+      Position.X = 160.000000000000000000
+      Position.Y = 564.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 42
+    end
+    object lblServerHeader: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = xFF0F172A
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 608.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Triage server'
+    end
+    object lblServerURL: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 640.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'MCP URL'
+    end
+    object edServerURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 640.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblServerToken: TLabel
+      Align = None
+      StyledSettings = [Family]
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.FontColor = xFF334155
+      TextSettings.WordWrap = False
+      TextSettings.Trimming = Character
+      Position.X = 28.000000000000000000
+      Position.Y = 676.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bearer token'
+    end
+    object edServerToken: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Password = True
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 13.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 676.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end
